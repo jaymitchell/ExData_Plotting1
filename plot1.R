@@ -14,3 +14,4 @@ data_to_plot <- subset(all_data, data_as_date==as.Date("2007-02-01") |
 png("plot1.png", width=480, height=480, units="px")
 hist(data_to_plot$Global_active_power, main="Global Active Power", col="Red",
      xlab="Global Active Power (kilowatts)")
+dev.off
