@@ -18,7 +18,7 @@ plot(data_to_plot$Time, data_to_plot$Global_active_power,
      ylab="Global Active Power (kilowatts)")
 
 # Voltage plot
-plot(data_to_plot$Time, data_to_plot$Voltage)
+plot(data_to_plot$Time, data_to_plot$Voltage, ylab="Voltage", xlab="datetime")
 
 # Energy sub metering plot
 plot(data_to_plot$Time, data_to_plot$Sub_metering_1, ylab="Energy sub metering")
@@ -31,6 +31,7 @@ legend("topright",
        bty="n")
 
 # Global reactive power plot
-plot(data_to_plot$Time, data_to_plot$Global_reactive_power)
+plot(data_to_plot$Time, data_to_plot$Global_reactive_power,
+     ylab="Global_reactive_power", xlab="datetime")
 
 dev.off()
